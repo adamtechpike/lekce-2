@@ -2,6 +2,7 @@
 $titulek = 'Uživatelský profil';
 $profil = ['jmeno' => 'Adam' , 'prijmeni' => 'Soltys'];
 $profil['vek'] = '30'; 
+$profil['konicky'] = ['programovani' , 'hokej']; 
 ?>
 
 <!doctype html>
@@ -93,7 +94,9 @@ $profil['vek'] = '30';
     </tr>
     <tr>
       <th scope="row">Koníčky</th>
-      <td>Larry</td>
+      <td><?php
+    echo print_r($profil['konicky']);
+    ?></td>
     </tr>
   </tbody>
 </table>
